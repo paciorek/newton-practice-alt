@@ -1,6 +1,4 @@
 def deriv(f, x, eps=1e-5):
-    # if x < 5:
-    #    raise RuntimeError("fake error")
     return (f(x + eps) - f(x)) / eps
 
 
