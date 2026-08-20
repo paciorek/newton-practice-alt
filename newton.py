@@ -1,8 +1,8 @@
-def deriv(f, x, eps=1e-5):
+def deriv(f, x, eps=1e-6):
     return (f(x + eps) - f(x)) / eps
 
 
-def deriv2(f, x, eps=1e-5):
+def deriv2(f, x, eps=1e-6):
     return (deriv(f, x + eps, eps) - deriv(f, x, eps)) / eps
 
 
